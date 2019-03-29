@@ -1,0 +1,283 @@
+/* PARTIE NAV */
+
+body
+{
+    background: url(image/body.png) top center;
+    
+    position: relative;
+    font-family: 'FLOTTA', serif;
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav > ul > li
+{
+    float: right;
+    position: relative;
+}
+nav > ul > li:hover
+{
+    padding: 10px 10px 10px 10px;
+    transition: all 0.3s ease-in 0s;
+}
+nav > ul > li > a
+{
+    padding: 20px 30px;
+    color: white;
+    font-size: 20px;
+}
+nav li
+{
+    list-style-type: none;
+}
+nav li:hover .submenu
+{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
+    transition: all 0.3s ease-in 0s;
+}
+nav
+{
+    width: 100%;
+    background-color: #c13b3b;
+    border-radius: 50px;
+    border-right: 5px solid #c13b3b;
+    box-shadow: 0px 0px 5px #777;
+    margin-bottom: 70px;
+   
+}
+nav a
+{
+    display: inline-block;
+    text-decoration: none;
+}
+.submenu
+{
+    display: none;
+}
+.submenu li
+{
+    border-bottom: 1px solid #c13b3b;
+}
+.submenu li a
+{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #c13b3b;
+    width: 210px;   
+}
+.acceuil
+{
+    
+}
+.plats
+{
+    
+    
+}
+.tuto
+{
+   
+    
+}
+.aboutus
+{
+    
+    
+}
+.contact
+{
+   
+    
+}
+.plats .submenu
+{
+    background-color: white;
+    opacity: 0.9;
+    filter: alpha(opacity=10);
+}
+.submenu li:hover a
+{
+    color: white;
+    transition: all 0.3s ease-in 0s;
+}
+.plats .submenu li:hover
+{
+    background-color: #c13b3b;
+    transition: all 0.3s ease-in 0s;
+}
+.tuto .submenu
+{
+    background-color: white;
+   
+}
+.tuto .submenu li:hover
+{
+    background-color: #c13b3b;
+    transition: all 0.3s ease-in 0s;
+}
+
+
+
+
+img
+{
+    
+    width: 300px;
+    padding-top: 10px;
+    margin-left: 20px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+img:hover
+{
+    
+    -webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+.logoweb
+{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+}
+.logoweb:hover img
+{
+    -webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+/* PARTIE BODY */
+
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+video
+{
+    display: block;
+}
+.diaporama1
+{
+    margin: 0 auto;
+    width: 760px;
+    height: 300px;
+    border: 3px solid #c13b3b;
+    background-image: url(image/123.png);
+    -webkit-animation-name: diapo1;
+    -webkit-animation-duration:12s;
+     -webkit-animation-timing-function:linear;
+     -webkit-animation-iteration-count:infinite;
+     -webkit-animation-direction:normal;
+    
+    -moz-animation-name: diapo1;
+    -moz-animation-duration:12s;
+     -moz-animation-timing-function:linear;
+     -moz-animation-iteration-count:infinite;
+     -moz-animation-direction:normal;
+    
+    animation-name: diapo1;
+    animation-duration:12s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    
+   
+}
+ @-webkit-keyframes diapo1
+    {
+        0%{background-position: 0px 0px;}
+        2%{background-position: 0px 0px;}
+        31%{background-position: -960px 0px;}
+        35%{background-position: -960px 0px;}
+        64%{background-position: -1920px 0px;}
+        68%{background-position: -1920px 0px;}
+        98%{background-position: -2880px 0px;}
+        100%{background-position: -2880px 0px;}
+    }
+}
+ @-moz-keyframes diapo1
+    {
+        0%{background-position: 0px 0px;}
+        2%{background-position: 0px 0px;}
+        31%{background-position: -960px 0px;}
+        35%{background-position: -960px 0px;}
+        64%{background-position: -1920px 0px;}
+        68%{background-position: -1920px 0px;}
+        98%{background-position: -2880px 0px;}
+        100%{background-position: -2880px 0px;}
+    }
+}
+ @keyframes diapo1
+    {
+        0%{background-position: 0px 0px;}
+        2%{background-position: 0px 0px;}
+        31%{background-position: -960px 0px;}
+        35%{background-position: -960px 0px;}
+        64%{background-position: -1920px 0px;}
+        68%{background-position: -1920px 0px;}
+        98%{background-position: -2880px 0px;}
+        100%{background-position: -2880px 0px;}
+    }
+
+
+/* PARTIE GATEGORI PLATS */
+
+
+
+
+
+
+
+
+/* PARTIE FOOTER */
+
+footer
+{
+    background-color: #c13b3b;
+    width:100%;
+    height: 200px;
+    margin-top:90px;
+/*    margin-bottom: 0 auto;*/
+    
+}
+footer img
+{
+    width: 150px;
+    
+}
+.copyright
+{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
